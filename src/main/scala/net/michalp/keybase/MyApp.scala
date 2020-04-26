@@ -18,18 +18,19 @@ object MyApp extends App {
 
   def run(args: List[String]) = {
     val env = cmd.CmdRuntime.instance ++ (cmd.CmdRuntime.instance >>> KeybaseClient.instance)
-    myAppLogic.provideSomeLayer[ZEnv](env).fold(_ => 1, _ => 0)
+    myAppLogic.provideSomeLayer[ZEnv](env).fold({err => 
+      println(err)
+      1
+    }, _ => 0)
   }
 
   val myAppLogic =
     for {
-      // _    <- putStr("$ ")
-      // exec <- getStrLn
-      // _    <- putStrLn(s"Executing command: `${exec}`")
-      // r1   <- cmd.CmdRuntime.execute(exec)
-      // _    <- putStrLn(s"Resp: $r1")
-      r2   <- KeybaseClient.get("test-channel")
-      _    <- putStrLn(s"Resp: ${r2.toList}")
+      _    <- putStr("Keybase bot playground")
+      // r1   <- KeybaseClient.send("majkp", "hello there")
+      // _    <- putStrLn(s"Resp: ${r1}")
+      r2   <- KeybaseClient.get("majkp")
+      _    <- putStrLn(s"Resp: ${r2.mkString("\n")}")
       // _    <- getStrLn
       // _    <- putStrLn(r.map(_.body).mkString("\n"))
     } yield ()
