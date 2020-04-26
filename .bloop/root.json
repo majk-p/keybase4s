@@ -1,0 +1,256 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "root",
+        "directory": "C:\\Users\\Michal\\code\\keybase-api",
+        "workspaceDir": "C:\\Users\\Michal\\code\\keybase-api",
+        "sources": [
+            "C:\\Users\\Michal\\code\\keybase-api\\src\\main\\scala-2.12",
+            "C:\\Users\\Michal\\code\\keybase-api\\src\\main\\scala",
+            "C:\\Users\\Michal\\code\\keybase-api\\src\\main\\java",
+            "C:\\Users\\Michal\\code\\keybase-api\\target\\scala-2.12\\src_managed\\main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.11\\scala-library-2.12.11.jar",
+            "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_2.12\\1.0.0-RC18-2\\zio_2.12-1.0.0-RC18-2.jar",
+            "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\os-lib_2.12\\0.2.7\\os-lib_2.12-0.2.7.jar",
+            "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_2.12\\1.0.0-RC18-2\\zio-stacktracer_2.12-1.0.0-RC18-2.jar",
+            "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect_2.12\\0.12.0-M0\\izumi-reflect_2.12-0.12.0-M0.jar",
+            "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\geny_2.12\\0.1.5\\geny_2.12-0.1.5.jar",
+            "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_2.12\\0.12.0-M0\\izumi-reflect-thirdparty-boopickle-shaded_2.12-0.12.0-M0.jar"
+        ],
+        "out": "C:\\Users\\Michal\\code\\keybase-api\\.bloop\\root",
+        "classesDir": "C:\\Users\\Michal\\code\\keybase-api\\.bloop\\root\\scala-2.12\\classes",
+        "resources": [
+            "C:\\Users\\Michal\\code\\keybase-api\\src\\main\\resources",
+            "C:\\Users\\Michal\\code\\keybase-api\\target\\scala-2.12\\resource_managed\\main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.11",
+            "options": [
+                
+            ],
+            "jars": [
+                "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.12.11\\scala-compiler-2.12.11.jar",
+                "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.11\\scala-library-2.12.11.jar",
+                "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.11\\scala-reflect-2.12.11.jar",
+                "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar",
+                "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\jline\\jline\\2.14.6\\jline-2.14.6.jar",
+                "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\fusesource\\jansi\\jansi\\1.12\\jansi-1.12.jar"
+            ],
+            "analysis": "C:\\Users\\Michal\\code\\keybase-api\\target\\streams\\compile\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.12.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Program Files (x86)\\Java\\jre1.8.0_241",
+                "options": [
+                    "-Duser.dir=C:\\Users\\Michal\\code\\keybase-api"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.11\\scala-library-2.12.11.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.11\\scala-library-2.12.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio_2.12",
+                    "version": "1.0.0-RC18-2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio_2.12",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_2.12\\1.0.0-RC18-2\\zio_2.12-1.0.0-RC18-2.jar"
+                        },
+                        {
+                            "name": "zio_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_2.12\\1.0.0-RC18-2\\zio_2.12-1.0.0-RC18-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "os-lib_2.12",
+                    "version": "0.2.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "os-lib_2.12",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\os-lib_2.12\\0.2.7\\os-lib_2.12-0.2.7.jar"
+                        },
+                        {
+                            "name": "os-lib_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\os-lib_2.12\\0.2.7\\os-lib_2.12-0.2.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-stacktracer_2.12",
+                    "version": "1.0.0-RC18-2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-stacktracer_2.12",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_2.12\\1.0.0-RC18-2\\zio-stacktracer_2.12-1.0.0-RC18-2.jar"
+                        },
+                        {
+                            "name": "zio-stacktracer_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_2.12\\1.0.0-RC18-2\\zio-stacktracer_2.12-1.0.0-RC18-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "izumi-reflect_2.12",
+                    "version": "0.12.0-M0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "izumi-reflect_2.12",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect_2.12\\0.12.0-M0\\izumi-reflect_2.12-0.12.0-M0.jar"
+                        },
+                        {
+                            "name": "izumi-reflect_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect_2.12\\0.12.0-M0\\izumi-reflect_2.12-0.12.0-M0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "geny_2.12",
+                    "version": "0.1.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "geny_2.12",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\geny_2.12\\0.1.5\\geny_2.12-0.1.5.jar"
+                        },
+                        {
+                            "name": "geny_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\geny_2.12\\0.1.5\\geny_2.12-0.1.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "izumi-reflect-thirdparty-boopickle-shaded_2.12",
+                    "version": "0.12.0-M0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "izumi-reflect-thirdparty-boopickle-shaded_2.12",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_2.12\\0.12.0-M0\\izumi-reflect-thirdparty-boopickle-shaded_2.12-0.12.0-M0.jar"
+                        },
+                        {
+                            "name": "izumi-reflect-thirdparty-boopickle-shaded_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_2.12\\0.12.0-M0\\izumi-reflect-thirdparty-boopickle-shaded_2.12-0.12.0-M0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.11",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.11\\scala-library-2.12.11.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Michal\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.11\\scala-library-2.12.11-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

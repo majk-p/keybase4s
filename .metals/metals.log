@@ -1,0 +1,858 @@
+INFO  started: Metals version 0.8.4 in workspace '/mnt/c/Users/Michal/code/keybase-api'
+INFO  time: initialize in 0.32s
+INFO  running '/home/majk/.sdkman/candidates/java/current/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals657550750477563673/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  started: Metals version 0.8.4 in workspace '/mnt/c/Users/Michal/code/keybase-api'
+INFO  time: initialize in 0.3s
+INFO  skipping build import with status 'Started'
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.4 in workspace 'C:\Users\Michal\code\keybase-api'
+INFO  time: initialize in 0.31s
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals1546723187104493077\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+ERROR Getting org.scala-sbt sbt 1.3.9  (this may take some time)...
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.3.9/sbt-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#sbt;1.3.9!sbt.jar (266ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.3.9/main_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#main_2.12;1.3.9!main_2.12.jar (907ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.3.4/io_2.12-1.3.4.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#io_2.12;1.3.4!io_2.12.jar (337ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.3.9/logic_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#logic_2.12;1.3.9!logic_2.12.jar (192ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.3.9/actions_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#actions_2.12;1.3.9!actions_2.12.jar (247ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.3.9/main-settings_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#main-settings_2.12;1.3.9!main-settings_2.12.jar (349ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.3.9/run_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#run_2.12;1.3.9!run_2.12.jar (199ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.3.9/command_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#command_2.12;1.3.9!command_2.12.jar (277ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/collections_2.12/1.3.9/collections_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#collections_2.12;1.3.9!collections_2.12.jar (254ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/scripted-sbt-redux_2.12/1.3.9/scripted-sbt-redux_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#scripted-sbt-redux_2.12;1.3.9!scripted-sbt-redux_2.12.jar (200ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.3.9/scripted-plugin_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#scripted-plugin_2.12;1.3.9!scripted-plugin_2.12.jar (181ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-lm-integration_2.12/1.3.9/zinc-lm-integration_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc-lm-integration_2.12;1.3.9!zinc-lm-integration_2.12.jar (193ms)
+INFO  downloading https://repo1.maven.org/maven2/io/get-coursier/lm-coursier-shaded_2.12/2.0.0-RC6-2/lm-coursier-shaded_2.12-2.0.0-RC6-2.jar ...
+INFO  	[SUCCESSFUL ] io.get-coursier#lm-coursier-shaded_2.12;2.0.0-RC6-2!lm-coursier-shaded_2.12.jar (2097ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.3.3/util-logging_2.12-1.3.3.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#util-logging_2.12;1.3.3!util-logging_2.12.jar (268ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.3.1/librarymanagement-core_2.12-1.3.1.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#librarymanagement-core_2.12;1.3.1!librarymanagement-core_2.12.jar (390ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.3.1/librarymanagement-ivy_2.12-1.3.1.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#librarymanagement-ivy_2.12;1.3.1!librarymanagement-ivy_2.12.jar (332ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#compiler-interface;1.3.5!compiler-interface.jar (198ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.3.5/zinc-compile_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc-compile_2.12;1.3.5!zinc-compile_2.12.jar (197ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.3.3/util-relation_2.12-1.3.3.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#util-relation_2.12;1.3.3!util-relation_2.12.jar (191ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/util-position_2.12/1.3.3/util-position_2.12-1.3.3.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#util-position_2.12;1.3.3!util-position_2.12.jar (183ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.3.9/completion_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#completion_2.12;1.3.9!completion_2.12.jar (244ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.3.9/task-system_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#task-system_2.12;1.3.9!task-system_2.12.jar (204ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.3.9/tasks_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#tasks_2.12;1.3.9!tasks_2.12.jar (205ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.3.9/testing_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#testing_2.12;1.3.9!testing_2.12.jar (230ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.12/1.3.3/util-tracking_2.12-1.3.3.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#util-tracking_2.12;1.3.3!util-tracking_2.12.jar (192ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.3.5/zinc-classpath_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc-classpath_2.12;1.3.5!zinc-classpath_2.12.jar (202ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.3.5/zinc-apiinfo_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc-apiinfo_2.12;1.3.5!zinc-apiinfo_2.12.jar (213ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.3.5/zinc_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc_2.12;1.3.5!zinc_2.12.jar (194ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/util-control_2.12/1.3.3/util-control_2.12-1.3.3.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#util-control_2.12;1.3.3!util-control_2.12.jar (178ms)
+INFO  downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.5.0/jna-5.5.0.jar ...
+INFO  	[SUCCESSFUL ] net.java.dev.jna#jna;5.5.0!jna.jar (586ms)
+INFO  downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.5.0/jna-platform-5.5.0.jar ...
+INFO  	[SUCCESSFUL ] net.java.dev.jna#jna-platform;5.5.0!jna-platform.jar (859ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.3/util-interface-1.3.3.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#util-interface;1.3.3!util-interface.jar (168ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/util-cache_2.12/1.3.3/util-cache_2.12-1.3.3.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#util-cache_2.12;1.3.3!util-cache_2.12.jar (229ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.3.9/test-agent-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#test-agent;1.3.9!test-agent.jar (190ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.3.5/compiler-bridge_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#compiler-bridge_2.12;1.3.5!compiler-bridge_2.12.jar (238ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.3.5/zinc-classfile_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc-classfile_2.12;1.3.5!zinc-classfile_2.12.jar (202ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.3.5/zinc-core_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc-core_2.12;1.3.5!zinc-core_2.12.jar (333ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.3.5/zinc-persist_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc-persist_2.12;1.3.5!zinc-persist_2.12.jar (656ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.3.5/zinc-compile-core_2.12-1.3.5.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#zinc-compile-core_2.12;1.3.5!zinc-compile-core_2.12.jar (263ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/sbinary_2.12/0.5.0/sbinary_2.12-0.5.0.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#sbinary_2.12;0.5.0!sbinary_2.12.jar (234ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/core-macros_2.12/1.3.9/core-macros_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#core-macros_2.12;1.3.9!core-macros_2.12.jar (203ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.3.9/protocol_2.12-1.3.9.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#protocol_2.12;1.3.9!protocol_2.12.jar (302ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.0.1/ipcsocket-1.0.1.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt.ipcsocket#ipcsocket;1.0.1!ipcsocket.jar (179ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/util-scripted_2.12/1.3.3/util-scripted_2.12-1.3.3.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt#util-scripted_2.12;1.3.3!util-scripted_2.12.jar (188ms)
+INFO  downloading https://repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-88d6a93d15f9b029958c1c289a8859e8dfe31a19/ivy-2.3.0-sbt-88d6a93d15f9b029958c1c289a8859e8dfe31a19.jar ...
+INFO  	[SUCCESSFUL ] org.scala-sbt.ivy#ivy;2.3.0-sbt-88d6a93d15f9b029958c1c289a8859e8dfe31a19!ivy.jar (480ms)
+INFO  :: retrieving :: org.scala-sbt#boot-app
+INFO  	confs: [default]
+INFO  	81 artifacts copied, 0 already retrieved (38276kB/190ms)
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+INFO  [info] Compiling 1 Scala source to C:\Users\Michal\code\keybase-api\project\target\scala-2.12\sbt-1.0\classes ...
+INFO  [info] Non-compiled module 'compiler-bridge_2.12' for Scala 2.12.10. Compiling...
+INFO  [info]   Compilation completed in 3.833s.
+INFO  [info] Done compiling.
+INFO  [info] Loading settings for project root from build.sbt ...
+INFO  [info] Set current project to Keybase API (in build file:/C:/Users/Michal/code/keybase-api/)
+INFO  [success] Generated .bloop\root-test.json
+INFO  [success] Generated .bloop\root.json
+INFO  [success] Total time: 12 s, completed 2020-04-25 17:24:25
+INFO  build tool exit: 0
+INFO  time: ran 'sbt bloopInstall' in 1m16s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 37732'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals7719578296907260914\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.0-RC1-190-ef7d8dba...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\Michal\code\keybase-api\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\Michal\code\keybase-api\.bloop\root.json'
+[0m[32m[D][0m Loading project from 'c:\Users\Michal\code\keybase-api\.bloop\root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.1.
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\jline\jline\2.14.6\jline-2.14.6.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\fusesource\jansi\jansi\1.12\jansi-1.12.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.1\scala-compiler-2.13.1.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.1\scala-reflect-2.13.1.jar
+[0m[32m[D][0m Missing analysis file for project 'root'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:37732...
+The server is listening for incoming connections at tcp://127.0.0.1:37732...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+INFO  [info] Loading settings for project root from build.sbt ...
+INFO  [info] Set current project to Keybase API (in build file:/C:/Users/Michal/code/keybase-api/)
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  [success] Generated .bloop\root-test.json
+INFO  [success] Generated .bloop\root.json
+INFO  [success] Total time: 0 s, completed 2020-04-25 17:24:39
+INFO  build tool exit: 0
+INFO  time: ran 'sbt bloopInstall' in 5.85s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 36375'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:36375...
+The server is listening for incoming connections at tcp://127.0.0.1:36375...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.06s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 1.68s
+ERROR Timeout waiting for 'build/initialize' response
+INFO  disconnected: build server
+ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(null)
+	at java.util.concurrent.CompletableFuture.get(null)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:259)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:203)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals8439494899208186175\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+INFO  [info] Loading settings for project root from build.sbt ...
+INFO  [info] Set current project to Keybase API (in build file:/C:/Users/Michal/code/keybase-api/)
+INFO  [success] Generated .bloop\root.json
+INFO  [success] Generated .bloop\root-test.json
+INFO  [success] Total time: 6 s, completed 2020-04-25 17:25:47
+INFO  build tool exit: 0
+INFO  time: ran 'sbt bloopInstall' in 12s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 23160'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\Michal\code\keybase-api\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\Michal\code\keybase-api\.bloop\root-test.json'
+[0m[32m[D][0m Loading project from 'c:\Users\Michal\code\keybase-api\.bloop\root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.11.
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\jline\jline\2.14.6\jline-2.14.6.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\fusesource\jansi\jansi\1.12\jansi-1.12.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.12\1.0.6\scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.12.11\scala-compiler-2.12.11.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.12.11\scala-library-2.12.11.jar
+[0m[32m[D][0m   => C:\Users\Michal\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.12.11\scala-reflect-2.12.11.jar
+[0m[32m[D][0m Resolving org.scalameta:semanticdb-scalac_2.12.11:4.3.7
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:23160...
+The server is listening for incoming connections at tcp://127.0.0.1:23160...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals7121460594956932137\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 4.9s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 1.06s
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+INFO  [info] Loading settings for project root from build.sbt ...
+INFO  [info] Set current project to Keybase API (in build file:/C:/Users/Michal/code/keybase-api/)
+INFO  [success] Generated .bloop\root.json
+INFO  [success] Generated .bloop\root-test.json
+INFO  [success] Total time: 0 s, completed 2020-04-25 17:25:57
+INFO  build tool exit: 0
+INFO  time: ran 'sbt bloopInstall' in 5.73s
+INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 39765'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:39765...
+The server is listening for incoming connections at tcp://127.0.0.1:39765...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.04s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.24s
+INFO  skipping build import with status 'Installed'
+INFO  skipping build import with status 'Requested'
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals9037442867064983189\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+INFO  [info] Compiling 1 Scala source to C:\Users\Michal\code\keybase-api\project\target\scala-2.12\sbt-1.0\classes ...
+INFO  [info] Done compiling.
+INFO  [info] Loading settings for project root from build.sbt ...
+INFO  [info] Set current project to Keybase API (in build file:/C:/Users/Michal/code/keybase-api/)
+INFO  [success] Generated .bloop\root-test.json
+INFO  [success] Generated .bloop\root.json
+INFO  [success] Total time: 3 s, completed 2020-04-25 17:27:11
+INFO  build tool exit: 0
+INFO  time: ran 'sbt bloopInstall' in 12s
+INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 13347'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\Michal\code\keybase-api\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\Michal\code\keybase-api\.bloop\root-test.json'
+[0m[32m[D][0m Loading project from 'c:\Users\Michal\code\keybase-api\.bloop\root.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:13347...
+The server is listening for incoming connections at tcp://127.0.0.1:13347...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.03s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.4s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 6.69s
+WARN  no build target for: C:\Users\Michal\code\keybase-api\src\main\MyApp.scala
+WARN  no build target for: C:\Users\Michal\code\keybase-api\src\main\MyApp.scala
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.74s
+INFO  compiling root (1 scala source)
+ERROR text document: file:///c:/Users/Michal/code/keybase-api/src/main/scala/example/Hello.scala
+java.nio.file.NoSuchFileException: c:\Users\Michal\code\keybase-api\src\main\scala\example\Hello.scala
+	at sun.nio.fs.WindowsException.translateToIOException(null)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(null)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(null)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(null)
+	at java.nio.file.Files.newByteChannel(null)
+	at java.nio.file.Files.newByteChannel(null)
+	at java.nio.file.Files.readAllBytes(null)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.Semanticdbs$.loadResolvedTextDocument(Semanticdbs.scala:69)
+	at scala.meta.internal.mtags.Semanticdbs$.loadTextDocument(Semanticdbs.scala:51)
+	at scala.meta.internal.metals.FileSystemSemanticdbs.textDocument(FileSystemSemanticdbs.scala:32)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:28)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:34)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:16)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1186)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+ERROR text document: file:///c:/Users/Michal/code/keybase-api/src/main/scala/example/Hello.scala
+java.nio.file.NoSuchFileException: c:\Users\Michal\code\keybase-api\src\main\scala\example\Hello.scala
+	at sun.nio.fs.WindowsException.translateToIOException(null)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(null)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(null)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(null)
+	at java.nio.file.Files.newByteChannel(null)
+	at java.nio.file.Files.newByteChannel(null)
+	at java.nio.file.Files.readAllBytes(null)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.Semanticdbs$.loadResolvedTextDocument(Semanticdbs.scala:69)
+	at scala.meta.internal.mtags.Semanticdbs$.loadTextDocument(Semanticdbs.scala:51)
+	at scala.meta.internal.metals.FileSystemSemanticdbs.textDocument(FileSystemSemanticdbs.scala:32)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:28)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:34)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:16)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1186)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+INFO  time: compiled root in 0.66s
+INFO  no build target: using presentation compiler with only scala-library
+kwi 25, 2020 5:48:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 116
+INFO  shutting down Metals
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+INFO  started: Metals version 0.8.4 in workspace 'C:\Users\Michal\code\keybase-api'
+INFO  time: initialize in 0.29s
+INFO  skipping build import with status 'Installed'
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 42225'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:42225...
+The server is listening for incoming connections at tcp://127.0.0.1:42225...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+WARN  no build target for: C:\Users\Michal\code\keybase-api\src\main\scala\net\michalp\MyApp.scala
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.27s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.47s
+kwi 25, 2020 9:49:16 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+kwi 25, 2020 9:49:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.2s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.11s
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals6549044401691913952\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+INFO  [info] Compiling 1 Scala source to C:\Users\Michal\code\keybase-api\project\target\scala-2.12\sbt-1.0\classes ...
+INFO  [info] Done compiling.
+INFO  [info] Loading settings for project root from build.sbt ...
+INFO  [info] Set current project to Keybase API (in build file:/C:/Users/Michal/code/keybase-api/)
+INFO  [success] Generated .bloop\root.json
+INFO  [success] Generated .bloop\root-test.json
+INFO  [success] Total time: 0 s, completed 2020-04-25 21:50:06
+INFO  time: ran 'sbt bloopInstall' in 10s
+INFO  build tool exit: 0
+INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 43200'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:43200...
+The server is listening for incoming connections at tcp://127.0.0.1:43200...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.05s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.3s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.1s
+ERROR code navigation does not work for the file 'C:\Users\Michal\code\keybase-api\src\main\scala\net\michalp\MyApp.scala' because the SemanticDB file 'C:\Users\Michal\code\keybase-api\.bloop\root\bloop-bsp-clients-classes\classes-Metals-lLzh1laJTA2dCnsFLjh9zg==\META-INF\semanticdb\src\main\scala\net\michalp\MyApp.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+INFO  no build target: using presentation compiler with only scala-library
+Exception in thread "pool-6-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:27)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:198)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:101)
+	... 3 more
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 99ms
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.1s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.1s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.1s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.73s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.84s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.78s
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals5590096996845916081\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+ERROR C:\Users\Michal\code\keybase-api\build.sbt:8: error: No Append.Values[Seq[sbt.librarymanagement.ModuleID], (sbt.librarymanagement.ModuleID, sbt.librarymanagement.ModuleID)] found, so (sbt.librarymanagement.ModuleID, sbt.librarymanagement.ModuleID) cannot be appended to Seq[sbt.librarymanagement.ModuleID]
+ERROR libraryDependencies ++= (
+ERROR                     ^
+INFO  [error] Type error in expression
+INFO  Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? 
+INFO  build tool exit: 1
+INFO  time: ran 'sbt bloopInstall' in 5.86s
+INFO  disconnected: build server
+ERROR sbt command failed: C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals5590096996845916081\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 41291'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:41291...
+The server is listening for incoming connections at tcp://127.0.0.1:41291...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.05s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.3s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.71s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.11s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.69s
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals4205543840980209698\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+ERROR C:\Users\Michal\code\keybase-api\build.sbt:8: error: No Append.Values[Seq[sbt.librarymanagement.ModuleID], (sbt.librarymanagement.ModuleID, sbt.librarymanagement.ModuleID)] found, so (sbt.librarymanagement.ModuleID, sbt.librarymanagement.ModuleID) cannot be appended to Seq[sbt.librarymanagement.ModuleID]
+ERROR libraryDependencies ++= (
+ERROR                     ^
+INFO  [error] Type error in expression
+INFO  Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? 
+INFO  build tool exit: 1
+INFO  time: ran 'sbt bloopInstall' in 5.82s
+ERROR sbt command failed: C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals4205543840980209698\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 23882'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:23882...
+The server is listening for incoming connections at tcp://127.0.0.1:23882...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.05s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.28s
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals7005336037036519771\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+ERROR C:\Users\Michal\code\keybase-api\build.sbt:8: error: reassignment to val
+ERROR libraryDependencies = (
+ERROR                     ^
+INFO  [error] Type error in expression
+INFO  Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? 
+INFO  build tool exit: 1
+INFO  time: ran 'sbt bloopInstall' in 5.7s
+ERROR sbt command failed: C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals7005336037036519771\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 38993'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:38993...
+The server is listening for incoming connections at tcp://127.0.0.1:38993...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.07s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.42s
+INFO  running 'C:\Program Files (x86)\Java\jre1.8.0_241\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Michal\AppData\Local\Temp\metals4528122483151394852\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+INFO  [info] Loading settings for project keybase-api-build from metals.sbt ...
+INFO  [info] Loading project definition from C:\Users\Michal\code\keybase-api\project
+INFO  [info] Loading settings for project root from build.sbt ...
+INFO  [info] Set current project to Keybase API (in build file:/C:/Users/Michal/code/keybase-api/)
+INFO  [success] Generated .bloop\root.json
+INFO  [success] Generated .bloop\root-test.json
+INFO  [success] Total time: 2 s, completed 2020-04-25 22:01:04
+INFO  build tool exit: 0
+INFO  time: ran 'sbt bloopInstall' in 8.6s
+INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 28725'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\Michal\code\keybase-api\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\Michal\code\keybase-api\.bloop\root.json'
+[0m[32m[D][0m Loading project from 'c:\Users\Michal\code\keybase-api\.bloop\root-test.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:28725...
+The server is listening for incoming connections at tcp://127.0.0.1:28725...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.05s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.36s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.74s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.71s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.53s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.67s
+kwi 25, 2020 10:06:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+kwi 25, 2020 10:06:24 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+kwi 25, 2020 10:06:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+kwi 25, 2020 10:07:02 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+INFO  shutting down Metals
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+INFO  started: Metals version 0.8.4 in workspace 'C:\Users\Michal\code\keybase-api'
+INFO  time: initialize in 0.27s
+INFO  skipping build import with status 'Installed'
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 14365'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:14365...
+The server is listening for incoming connections at tcp://127.0.0.1:14365...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+WARN  no build target for: C:\Users\Michal\code\keybase-api\src\main\scala\net\michalp\MyApp.scala
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  time: connected to build server in 1.24s
+INFO  Connected to Build server v1.4.0-RC1-190-ef7d8dba
+WARN  Could not find java sources in None. Java symbols will not be available.
+INFO  time: indexed workspace in 0.49s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.71s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.85s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.81s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.71s
+kwi 25, 2020 10:09:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 296
+kwi 25, 2020 10:09:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 293
+kwi 25, 2020 10:10:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: String index out of range: -11
+java.lang.StringIndexOutOfBoundsException: String index out of range: -11
+	at java.lang.String.<init>(Unknown Source)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:265)
+	at scala.reflect.api.Trees$Traverser.$anonfun$traverseTrees$1(Trees.scala:2492)
+	at scala.reflect.api.Trees$Traverser.traverseTrees(Trees.scala:2492)
+	at scala.reflect.internal.Trees.traverseComponents$1(Trees.scala:1272)
+	at scala.reflect.internal.Trees.itraverse(Trees.scala:1368)
+	at scala.reflect.internal.Trees.itraverse$(Trees.scala:1238)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2483)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:265)
+	at scala.reflect.internal.Trees.$anonfun$itraverse$1(Trees.scala:1253)
+	at scala.reflect.api.Trees$Traverser.atOwner(Trees.scala:2515)
+	at scala.reflect.internal.Trees.traverseMemberDef$1(Trees.scala:1241)
+	at scala.reflect.internal.Trees.itraverse(Trees.scala:1366)
+	at scala.reflect.internal.Trees.itraverse$(Trees.scala:1238)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2483)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:265)
+	at scala.reflect.api.Trees$Traverser.$anonfun$traverseStats$2(Trees.scala:2506)
+	at scala.reflect.api.Trees$Traverser.atOwner(Trees.scala:2515)
+	at scala.reflect.api.Trees$Traverser.$anonfun$traverseStats$1(Trees.scala:2506)
+	at scala.reflect.api.Trees$Traverser.traverseStats(Trees.scala:2505)
+	at scala.reflect.internal.Trees.traverseComponents$1(Trees.scala:1270)
+	at scala.reflect.internal.Trees.itraverse(Trees.scala:1368)
+	at scala.reflect.internal.Trees.itraverse$(Trees.scala:1238)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.internal.SymbolTable.itraverse(SymbolTable.scala:28)
+	at scala.reflect.api.Trees$Traverser.traverse(Trees.scala:2483)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:339)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.2s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.17s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.16s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.16s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.15s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.15s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.94s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.82s
+INFO  compiling root (1 scala source)
+INFO  time: compiled root in 0.82s
+something's wrong: no file:///c%3A/Users/Michal/code/keybase-api/.metals/readonly/zio/ZIO.scala in Either[B,C]RangePosition(file:///c%3A/Users/Michal/code/keybase-api/.metals/readonly/zio/ZIO.scala, 38874, 38874, 38886)
+Exception in thread "pool-1-thread-33" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOfRange(Unknown Source)
+	at java.lang.String.<init>(Unknown Source)
+	at java.util.zip.ZipCoder.toString(Unknown Source)
+	at java.util.zip.ZipFile.getZipEntry(Unknown Source)
+	at java.util.zip.ZipFile.access$900(Unknown Source)
+	at java.util.zip.ZipFile$ZipEntryIterator.next(Unknown Source)
+	at java.util.zip.ZipFile$ZipEntryIterator.nextElement(Unknown Source)
+	at java.util.zip.ZipFile$ZipEntryIterator.nextElement(Unknown Source)
+	at java.util.jar.JarFile$JarEntryIterator.next(Unknown Source)
+	at java.util.jar.JarFile$JarEntryIterator.nextElement(Unknown Source)
+	at java.util.jar.JarFile$JarEntryIterator.nextElement(Unknown Source)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder.scala$meta$internal$classpath$ClasspathIndex$Builder$$expandJarEntry(ClasspathIndex.scala:140)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1.$anonfun$applyOrElse$2(ClasspathIndex.scala:77)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1.$anonfun$applyOrElse$2$adapted(ClasspathIndex.scala:77)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1$$Lambda$1937/31941383.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1.applyOrElse(ClasspathIndex.scala:77)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1.applyOrElse(ClasspathIndex.scala:73)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:172)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:159)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder.expandJdkClasspath(ClasspathIndex.scala:73)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder.result(ClasspathIndex.scala:62)
+	at scala.meta.internal.classpath.ClasspathIndex$.apply(ClasspathIndex.scala:53)
+	at scala.meta.internal.symtab.GlobalSymbolTable.<init>(GlobalSymbolTable.scala:21)
+	at scala.meta.internal.symtab.GlobalSymbolTable$.apply(GlobalSymbolTable.scala:78)
+	at scala.meta.internal.implementation.GlobalClassTable.$anonfun$globalSymbolTableFor$4(GlobalClassTable.scala:44)
+	at scala.meta.internal.implementation.GlobalClassTable$$Lambda$1933/11073693.apply(Unknown Source)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:897)
+	at scala.meta.internal.implementation.GlobalClassTable.$anonfun$globalSymbolTableFor$3(GlobalClassTable.scala:44)
+	at scala.meta.internal.implementation.GlobalClassTable$$Lambda$1931/29739960.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+Exception in thread "pool-1-thread-42" java.lang.OutOfMemoryError: Java heap space
+	at java.util.zip.ZipCoder.toString(Unknown Source)
+	at java.util.zip.ZipFile.getZipEntry(Unknown Source)
+	at java.util.zip.ZipFile.access$900(Unknown Source)
+	at java.util.zip.ZipFile$ZipEntryIterator.next(Unknown Source)
+	at java.util.zip.ZipFile$ZipEntryIterator.nextElement(Unknown Source)
+	at java.util.zip.ZipFile$ZipEntryIterator.nextElement(Unknown Source)
+	at java.util.jar.JarFile$JarEntryIterator.next(Unknown Source)
+	at java.util.jar.JarFile$JarEntryIterator.nextElement(Unknown Source)
+	at java.util.jar.JarFile$JarEntryIterator.nextElement(Unknown Source)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder.scala$meta$internal$classpath$ClasspathIndex$Builder$$expandJarEntry(ClasspathIndex.scala:140)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1.$anonfun$applyOrElse$2(ClasspathIndex.scala:77)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1.$anonfun$applyOrElse$2$adapted(ClasspathIndex.scala:77)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1$$Lambda$1937/31941383.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1.applyOrElse(ClasspathIndex.scala:77)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder$$anonfun$expandJdkClasspath$1.applyOrElse(ClasspathIndex.scala:73)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:172)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:159)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder.expandJdkClasspath(ClasspathIndex.scala:73)
+	at scala.meta.internal.classpath.ClasspathIndex$Builder.result(ClasspathIndex.scala:62)
+	at scala.meta.internal.classpath.ClasspathIndex$.apply(ClasspathIndex.scala:53)
+	at scala.meta.internal.symtab.GlobalSymbolTable.<init>(GlobalSymbolTable.scala:21)
+	at scala.meta.internal.symtab.GlobalSymbolTable$.apply(GlobalSymbolTable.scala:78)
+	at scala.meta.internal.implementation.GlobalClassTable.$anonfun$globalSymbolTableFor$4(GlobalClassTable.scala:44)
+	at scala.meta.internal.implementation.GlobalClassTable$$Lambda$1933/11073693.apply(Unknown Source)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:897)
+	at scala.meta.internal.implementation.GlobalClassTable.$anonfun$globalSymbolTableFor$3(GlobalClassTable.scala:44)
+	at scala.meta.internal.implementation.GlobalClassTable$$Lambda$1931/29739960.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.implementation.GlobalClassTable.$anonfun$globalSymbolTableFor$1(GlobalClassTable.scala:39)
+	at scala.meta.internal.implementation.GlobalClassTable$$Lambda$1923/32282523.apply(Unknown Source)
+Exception in thread "pool-1-thread-25" java.lang.OutOfMemoryError: Java heap space
+kwi 25, 2020 10:16:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1127
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+kwi 25, 2020 10:16:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1129
+kwi 25, 2020 10:16:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1123
+kwi 25, 2020 10:16:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1132
+Exception in thread "pool-1-thread-37" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "pool-1-thread-3" java.lang.OutOfMemoryError: Java heap space
+kwi 25, 2020 10:17:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1134
+kwi 25, 2020 10:17:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1135
+kwi 25, 2020 10:17:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1138
+kwi 25, 2020 10:17:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1144
+kwi 25, 2020 10:17:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1140
+kwi 25, 2020 10:17:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1148
+Exception in thread "pool-1-thread-24" java.lang.OutOfMemoryError: Java heap space
+kwi 25, 2020 10:17:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1150
+kwi 25, 2020 10:17:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1154
+kwi 25, 2020 10:17:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1159
+kwi 25, 2020 10:17:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1163
+Exception in thread "pool-1-thread-17" java.lang.OutOfMemoryError: Java heap space
+kwi 25, 2020 10:17:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1167
+kwi 25, 2020 10:17:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1156
+kwi 25, 2020 10:17:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1171
+kwi 25, 2020 10:17:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1173
+kwi 25, 2020 10:17:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1177
+kwi 25, 2020 10:17:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1179
+kwi 25, 2020 10:17:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1183
+Exception in thread "pool-1-thread-61" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "pool-1-thread-38" java.lang.OutOfMemoryError: Java heap space
+kwi 25, 2020 10:18:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1194
+kwi 25, 2020 10:18:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1185
+kwi 25, 2020 10:18:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1205
+kwi 25, 2020 10:18:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1207
+kwi 25, 2020 10:18:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1151
+kwi 25, 2020 10:18:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1213
+kwi 25, 2020 10:18:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1217
+kwi 25, 2020 10:18:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1219
+kwi 25, 2020 10:18:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1221
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1222
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1223
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 12874'...
+Waiting for the bsp connection to come up...
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1224
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1225
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1227
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1228
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1229
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1211
+kwi 25, 2020 10:18:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1230
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:12874...
+The server is listening for incoming connections at tcp://127.0.0.1:12874...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Michal\AppData\Local\scalameta\metals\cache\bsp.trace.json
+INFO  compiling root (1 scala source)
