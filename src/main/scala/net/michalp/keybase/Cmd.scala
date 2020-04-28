@@ -11,9 +11,12 @@ object cmd {
   object CmdRuntime {
 
     trait Service {
+      def execute(command: Seq[String]): zio.Task[String]
       def execute(command: String): zio.Task[String]
       def spawn(command: String, input: String): zio.Task[String] 
     }
+
+    // TODO: consider providing a way to use `-m` parameter in keybase api
 
     def instance = ZLayer.succeed {
       new Service {
@@ -22,12 +25,15 @@ object cmd {
           val spawned = os.proc(splitCommand(command)).spawn()
           spawned.stdin.writeLine(input)
           spawned.stdin.close()
-          println("Input received:")
-          println(input)
           val resp = spawned.stdout.lines.distinct.mkString("\n")
           spawned.waitFor(5 * 1000)
           spawned.close()
           resp
+        }
+
+        def execute(command: Seq[String]) = ZIO.effect{
+          val status = os.proc(command).call()
+          status.out.lines.mkString("\n")
         }
 
         def execute(command: String) = ZIO.effect{
@@ -36,6 +42,9 @@ object cmd {
         }
       }
     }
+
+    def execute(c: Seq[String]): ZIO[Has[CmdRuntime.Service], Throwable, String] = 
+      ZIO.accessM(_.get.execute(c))
 
     def execute(c: String): ZIO[Has[CmdRuntime.Service], Throwable, String] = 
       ZIO.accessM(_.get.execute(c))

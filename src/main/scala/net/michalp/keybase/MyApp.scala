@@ -17,7 +17,8 @@ import zio.ZEnv
 object MyApp extends App {
 
   def run(args: List[String]) = {
-    val env = cmd.CmdRuntime.instance ++ (cmd.CmdRuntime.instance >>> KeybaseClient.instance)
+    // val env = cmd.CmdRuntime.instance ++ (cmd.CmdRuntime.instance >>> KeybaseClient.instance)
+    val env = cmd.CmdRuntime.instance >>> KeybaseClient.instance
     myAppLogic.provideSomeLayer[ZEnv](env).fold({err => 
       println(err)
       1
@@ -26,12 +27,10 @@ object MyApp extends App {
 
   val myAppLogic =
     for {
-      _    <- putStr("Keybase bot playground")
-      // r1   <- KeybaseClient.send("majkp", "hello there")
-      // _    <- putStrLn(s"Resp: ${r1}")
+      _    <- putStrLn("Keybase bot playground")
+      r1   <- KeybaseClient.send("majkp", "hello there")
+      _    <- putStrLn(s"Resp: ${r1}")
       r2   <- KeybaseClient.get("majkp")
       _    <- putStrLn(s"Resp: ${r2.mkString("\n")}")
-      // _    <- getStrLn
-      // _    <- putStrLn(r.map(_.body).mkString("\n"))
     } yield ()
 }
