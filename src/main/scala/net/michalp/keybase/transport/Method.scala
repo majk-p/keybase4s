@@ -5,6 +5,7 @@ import io.circe.generic.extras.Configuration
 import io.circe.generic.extras.semiauto.deriveUnwrappedCodec
 import io.circe.Codec
 import io.circe.Encoder
+import io.circe.Decoder
 object methods {
     implicit val config: Configuration = Configuration.default.withSnakeCaseMemberNames
 

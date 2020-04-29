@@ -17,6 +17,7 @@ object KeybaseClient {
   trait Service {
     def get(channel: String): Task[Seq[KeybaseClient.Message]]
     def send(channel: String, message: String): Task[Unit]
+    def init(user: String, paperKey: String): Task[Unit]
   }
 
   private val baseCommand = "keybase chat api"
@@ -41,6 +42,8 @@ object KeybaseClient {
             )
             .map(_.split("\n").toSeq.map(Message.apply))
 
+        def init(user: String, paperKey: String): zio.Task[Unit] = 
+          runtime.spawn(Seq("keybase", "oneshot", "-u", user), paperKey).unit
       }
     }
   
@@ -49,4 +52,8 @@ object KeybaseClient {
   
     def get(channel: String): ZIO[Has[KeybaseClient.Service], Throwable, Seq[Message]] = 
       ZIO.accessM(_.get.get(channel))
+  
+    def init(user: String, paperKey: String): ZIO[Has[KeybaseClient.Service], Throwable, Unit] = 
+      ZIO.accessM(_.get.init(user, paperKey))     
+  
 }

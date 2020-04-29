@@ -25,12 +25,15 @@ object MyApp extends App {
     }, _ => 0)
   }
 
-  val myAppLogic =
-    for {
-      _    <- putStrLn("Keybase bot playground")
-      r1   <- KeybaseClient.send("majkp", "hello there")
-      _    <- putStrLn(s"Resp: ${r1}")
-      r2   <- KeybaseClient.get("majkp")
-      _    <- putStrLn(s"Resp: ${r2.mkString("\n")}")
-    } yield ()
+  val login = "bot-name"
+  val paperKey = "paper-key-content"
+
+  val myAppLogic = for {
+    _    <- putStrLn("Keybase bot playground")
+    _    <- KeybaseClient.init(login, paperKey)
+    r1   <- KeybaseClient.send("majkp", "hello there")
+    _    <- putStrLn(s"Resp: ${r1}")
+    r2   <- KeybaseClient.get("majkp")
+    _    <- putStrLn(s"Resp: ${r2.mkString("\n")}")
+  } yield ()
 }
