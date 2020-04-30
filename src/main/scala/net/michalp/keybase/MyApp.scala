@@ -12,8 +12,6 @@ import zio.Layer
 import zio.Has
 import zio.ZEnv
 
-
-
 object MyApp extends App {
 
   def run(args: List[String]) = {
@@ -26,7 +24,7 @@ object MyApp extends App {
   }
 
   val login = "bot-name"
-  val paperKey = "paper-key-content"
+  val paperKey = "paper-key-content"    
 
   val myAppLogic = for {
     _    <- putStrLn("Keybase bot playground")
@@ -34,6 +32,6 @@ object MyApp extends App {
     r1   <- KeybaseClient.send("majkp", "hello there")
     _    <- putStrLn(s"Resp: ${r1}")
     r2   <- KeybaseClient.get("majkp")
-    _    <- putStrLn(s"Resp: ${r2.mkString("\n")}")
+    _    <- putStrLn(s"Resp: ${r2}")
   } yield ()
 }

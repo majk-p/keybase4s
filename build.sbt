@@ -11,6 +11,7 @@ libraryDependencies ++= Seq(
   "dev.zio" %% "zio" % "1.0.0-RC18-2",
   "com.lihaoyi" %% "os-lib" % "0.2.7",
   "io.circe" %% "circe-core" % circeVersion,
+  "io.circe" %% "circe-parser" % circeVersion,
   "io.circe" %% "circe-generic" % circeVersion,
   "io.circe" %% "circe-generic-extras" % "0.13.0"
 )
