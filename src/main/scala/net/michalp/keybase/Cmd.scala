@@ -1,8 +1,10 @@
 package net.michalp.keybase
 
+import scala.util.Try
 import zio.ZLayer
 import zio.ZIO
 import zio.Has
+import zio.stream.ZStream
 
 
 object cmd {
@@ -13,7 +15,7 @@ object cmd {
     trait Service {
       def execute(command: Seq[String]): zio.Task[String]
       def execute(command: String): zio.Task[String]
-      def listen(command: Seq[String]): zio.Task[String] 
+      def listen(command: Seq[String]): zio.stream.Stream[Throwable, String] 
       def spawn(command: Seq[String], input: String): zio.Task[String] 
       def spawn(command: String, input: String): zio.Task[String] 
     }
@@ -36,7 +38,18 @@ object cmd {
           resp
         }
         
-        def listen(command: Seq[String], input: String): zio.Task[String] = ???
+        def listen(command: Seq[String], input: String): zio.stream.Stream[Throwable, String] = 
+          ZStream.unwrap(
+            ZIO.effect {
+              val spawned = os.proc(command).spawn()
+              spawned.stdin.writeLine(input)
+              spawned.stdin.close()
+              ZStream.unfold(spawned.stdout){ stdout =>
+                Try{stdout.readLine()}.toOption.map((_, stdout))
+              }
+            }
+          )
+
         def execute(command: Seq[String]) = ZIO.effect{
           val status = os.proc(command).call()
           status.out.lines.mkString("\n")
@@ -52,7 +65,7 @@ object cmd {
     def execute(c: String): ZIO[Has[CmdRuntime.Service], Throwable, String] = 
       ZIO.accessM(_.get.execute(c))
 
-    def listen(c: Seq[String]): ZIO[Has[CmdRuntime.Service], Throwable, String] = 
+    def listen(c: Seq[String]): ZIO[Has[CmdRuntime.Service], Nothing, zio.stream.Stream[Throwable, String]] = 
       ZIO.accessM(_.get.listen(c))
 
     def spawn(c: Seq[String], i: String): ZIO[Has[CmdRuntime.Service], Throwable, String] = 
