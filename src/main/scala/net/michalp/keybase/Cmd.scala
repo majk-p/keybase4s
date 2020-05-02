@@ -38,12 +38,11 @@ object cmd {
           resp
         }
         
-        def listen(command: Seq[String], input: String): zio.stream.Stream[Throwable, String] = 
+        def listen(command: Seq[String]): zio.stream.Stream[Throwable, String] = 
           ZStream.unwrap(
             ZIO.effect {
+              // TODO: consider wrapping spawned process in resource instead of effect
               val spawned = os.proc(command).spawn()
-              spawned.stdin.writeLine(input)
-              spawned.stdin.close()
               ZStream.unfold(spawned.stdout){ stdout =>
                 Try{stdout.readLine()}.toOption.map((_, stdout))
               }
@@ -66,7 +65,7 @@ object cmd {
       ZIO.accessM(_.get.execute(c))
 
     def listen(c: Seq[String]): ZIO[Has[CmdRuntime.Service], Nothing, zio.stream.Stream[Throwable, String]] = 
-      ZIO.accessM(_.get.listen(c))
+      ZIO.access(_.get.listen(c))
 
     def spawn(c: Seq[String], i: String): ZIO[Has[CmdRuntime.Service], Throwable, String] = 
       ZIO.accessM(_.get.spawn(c, i))

@@ -23,6 +23,7 @@ object KeybaseClient {
     def get(channel: String): Task[response.Read]
     def send(channel: String, message: String): Task[Unit]
     def init(user: String, paperKey: String): Task[Unit]
+    def listen(channel: String): zio.stream.Stream[Throwable, response.Read]
   }
 
   private val baseCommand = "keybase chat api"
@@ -31,6 +32,9 @@ object KeybaseClient {
   def instance =  
     ZLayer.fromService { runtime: cmd.CmdRuntime.Service =>  
       new Service {
+
+        def listen(channel: String): zio.stream.Stream[Throwable,response.Read] = ???
+
         def send(channel: String, message: String): zio.Task[Unit] = 
           runtime.spawn(
             baseCommand,
