@@ -11,6 +11,7 @@ import zio.ZLayer
 import zio.Layer
 import zio.Has
 import zio.ZEnv
+import net.michalp.keybase.transport.response.MessageWrapper
 
 object Playground extends App {
 
@@ -35,5 +36,9 @@ object Playground extends App {
     _    <- putStrLn(s"Resp: ${r2}")
     s    <- KeybaseClient.listen("impteamnative")
     _    <- s.foreach(r => putStrLn(s"Message: $r")).forever
+    // _    <- s.foreach{r =>
+    //    putStrLn(s"Message: $r")
+    //    KeybaseClient.send(r.msg.channel.name, s"Hello ${r.msg.channel.name}")
+    // }.forever
   } yield ()
 }
