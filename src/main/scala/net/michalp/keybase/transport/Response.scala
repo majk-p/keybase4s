@@ -21,7 +21,10 @@ object response {
     final case class MessageContentText(body: String)
     final case class MessageContent(`type`: String, text: MessageContentText)
     final case class MessageWrapper(msg: Message)
-    final case class Message(id: Long, content: MessageContent, unread: Boolean)
+    object MessageWrapper {
+        implicit val decoder: Decoder[MessageWrapper] = deriveConfiguredDecoder
+    }
+    final case class Message(id: Long, content: MessageContent, unread: Boolean) // FIXME - content looks optional here
     // final case class Message(id: Long, conversationId: String, channel: ChannelInfo, content: MessageContent, unread: Boolean)
 
     

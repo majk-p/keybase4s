@@ -12,7 +12,7 @@ import zio.Layer
 import zio.Has
 import zio.ZEnv
 
-object MyApp extends App {
+object Playground extends App {
 
   def run(args: List[String]) = {
     // val env = cmd.CmdRuntime.instance ++ (cmd.CmdRuntime.instance >>> KeybaseClient.instance)
@@ -28,10 +28,12 @@ object MyApp extends App {
 
   val myAppLogic = for {
     _    <- putStrLn("Keybase bot playground")
-    _    <- KeybaseClient.init(login, paperKey)
+    // _    <- KeybaseClient.init(login, paperKey)
     r1   <- KeybaseClient.send("majkp", "hello there")
     _    <- putStrLn(s"Resp: ${r1}")
     r2   <- KeybaseClient.get("majkp")
     _    <- putStrLn(s"Resp: ${r2}")
+    s    <- KeybaseClient.listen("impteamnative")
+    _    <- s.foreach(r => putStrLn(s"Message: $r")).forever
   } yield ()
 }

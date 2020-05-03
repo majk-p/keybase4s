@@ -13,8 +13,12 @@ object methods {
     final case class Params[T: Encoder](options: T)
     final case class Envelope[T: Encoder](method: String, params: Params[T])
     object Envelope {
-        def make[T <: Options : Encoder](op: T): Envelope[T] = 
-            Envelope(op.getClass.getSimpleName.toLowerCase, Params(op))
+        def make[T <: Options : Encoder](op: T): Envelope[T] = {
+            // FIXME: https://github.com/scala/bug/issues/2034 
+            val simpleNameWorkaround = op.getClass().getName().split("""\$""").toList.reverse.head.toLowerCase()
+            println(simpleNameWorkaround)
+            Envelope(simpleNameWorkaround, Params(op))
+        }
     }
 
     sealed trait Options extends Product with Serializable
