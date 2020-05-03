@@ -24,7 +24,7 @@ object response {
     object MessageWrapper {
         implicit val decoder: Decoder[MessageWrapper] = deriveConfiguredDecoder
     }
-    final case class Message(id: Long, conversationId: String, channel: ChannelInfo, content: MessageContent, unread: Boolean)
+    final case class Message(id: Long, conversationId: String, channel: ChannelInfo, sender: SenderInfo, content: MessageContent, unread: Boolean)
     object Message {
         implicit val decoder: Decoder[Message] = deriveConfiguredDecoder
     }

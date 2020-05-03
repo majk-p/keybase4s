@@ -16,7 +16,6 @@ object methods {
         def make[T <: Options : Encoder](op: T): Envelope[T] = {
             // FIXME: https://github.com/scala/bug/issues/2034 
             val simpleNameWorkaround = op.getClass().getName().split("""\$""").toList.reverse.head.toLowerCase()
-            println(simpleNameWorkaround)
             Envelope(simpleNameWorkaround, Params(op))
         }
     }
