@@ -23,7 +23,7 @@ object KeybaseClient {
     def get(channel: String): Task[response.Read]
     def send(channel: String, message: String): Task[Unit]
     def init(user: String, paperKey: String): Task[Unit]
-    def listen(channel: String): zio.stream.Stream[Throwable, response.Read]
+    def listen(channel: String): zio.stream.Stream[Throwable, response.MessageWrapper]
   }
 
   private val baseCommand = "keybase chat api"
@@ -33,7 +33,12 @@ object KeybaseClient {
     ZLayer.fromService { runtime: cmd.CmdRuntime.Service =>  
       new Service {
 
-        def listen(channel: String): zio.stream.Stream[Throwable,response.Read] = ???
+        def listen(channel: String): zio.stream.Stream[Throwable,response.MessageWrapper] =
+          runtime.listen(Seq("keybase", "chat", "api-listen")).mapM{s =>
+            ZIO.fromEither(
+              decode[response.MessageWrapper](s)
+            )
+          }
 
         def send(channel: String, message: String): zio.Task[Unit] = 
           runtime.spawn(
@@ -64,6 +69,9 @@ object KeybaseClient {
   
     def get(channel: String): ZIO[Has[KeybaseClient.Service], Throwable, response.Read] = 
       ZIO.accessM(_.get.get(channel))
+  
+    def listen(channel: String): ZIO[Has[KeybaseClient.Service], Throwable, zio.stream.Stream[Throwable,response.MessageWrapper]] = 
+      ZIO.access(_.get.listen(channel))
   
     def init(user: String, paperKey: String): ZIO[Has[KeybaseClient.Service], Throwable, Unit] = 
       ZIO.accessM(_.get.init(user, paperKey))     
