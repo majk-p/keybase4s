@@ -5,6 +5,9 @@ import zio.ZLayer
 import zio.ZIO
 import zio.Has
 import zio.stream.ZStream
+import zio.Managed
+import zio.URIO
+import os.SubProcess
 
 
 object cmd {
@@ -38,16 +41,22 @@ object cmd {
           resp
         }
         
+        private def unfoldOutput(p: SubProcess) = ZStream.unfold(p.stdout){ stdout =>
+          Try{stdout.readLine()}.toOption.map((_, stdout))
+        }
+
         def listen(command: Seq[String]): zio.stream.Stream[Throwable, String] = 
-          ZStream.unwrap(
-            ZIO.effect {
-              // TODO: consider wrapping spawned process in resource instead of effect
-              val spawned = os.proc(command).spawn()
-              ZStream.unfold(spawned.stdout){ stdout =>
-                Try{stdout.readLine()}.toOption.map((_, stdout))
+          ZStream.unwrap{
+            ZIO.bracket(
+              ZIO.effect(os.proc(command).spawn())
+            ){
+              p => URIO(p.close())
+            }{
+              p => ZIO.effect {
+                unfoldOutput(p)
               }
             }
-          )
+          }
 
         def execute(command: Seq[String]) = ZIO.effect{
           val status = os.proc(command).call()
