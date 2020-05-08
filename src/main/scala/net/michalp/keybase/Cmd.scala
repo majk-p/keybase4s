@@ -18,12 +18,10 @@ object cmd {
     trait Service {
       def execute(command: Seq[String]): zio.Task[String]
       def execute(command: String): zio.Task[String]
-      def listen(command: Seq[String]): zio.stream.Stream[Throwable, String] 
+      def listen(command: Seq[String]): ZIO[Any, Throwable, zio.stream.Stream[Throwable, String]]
       def spawn(command: Seq[String], input: String): zio.Task[String] 
       def spawn(command: String, input: String): zio.Task[String] 
     }
-
-    // TODO: consider providing a way to use `-m` parameter in keybase api
 
     def instance = ZLayer.succeed {
       new Service {
@@ -41,21 +39,20 @@ object cmd {
           resp
         }
         
-        private def unfoldOutput(p: SubProcess) = ZStream.unfold(p.stdout){ stdout =>
-          Try{stdout.readLine()}.toOption.map((_, stdout))
-        }
-
-        def listen(command: Seq[String]): zio.stream.Stream[Throwable, String] = 
-          ZStream.unwrap{
-            ZIO.bracket(
-              ZIO.effect(os.proc(command).spawn())
-            ){
-              p => URIO(p.close())
-            }{
-              p => ZIO.effect {
-                unfoldOutput(p)
-              }
+        def listen(command: Seq[String]): zio.Task[zio.stream.Stream[Throwable, String]] = 
+          ZIO.bracket{
+            ZIO.effect {
+              val spawned = os.proc(command).spawn()
+              (spawned, ZStream.unfold(spawned.stdout){ stdout =>
+                Try{stdout.readLine()}.toOption.map((_, stdout))
+              })
             }
+          }{
+            p => 
+              // FIXME: This release happens too soon to kill the process
+              URIO.unit
+          }{
+            p => ZIO.apply(p._2)
           }
 
         def execute(command: Seq[String]) = ZIO.effect{
@@ -73,8 +70,8 @@ object cmd {
     def execute(c: String): ZIO[Has[CmdRuntime.Service], Throwable, String] = 
       ZIO.accessM(_.get.execute(c))
 
-    def listen(c: Seq[String]): ZIO[Has[CmdRuntime.Service], Nothing, zio.stream.Stream[Throwable, String]] = 
-      ZIO.access(_.get.listen(c))
+    def listen(c: Seq[String]): ZIO[Has[CmdRuntime.Service], Throwable, zio.stream.Stream[Throwable, String]] = 
+      ZIO.accessM(_.get.listen(c))
 
     def spawn(c: Seq[String], i: String): ZIO[Has[CmdRuntime.Service], Throwable, String] = 
       ZIO.accessM(_.get.spawn(c, i))
